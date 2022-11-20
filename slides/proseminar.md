@@ -187,10 +187,24 @@ Die Menge der algebraischen Zahlen ist abzählbar
 
 ## Satz von Liouville
 
-Sei $\alpha$ algebraisch vom Grad $\ge 1$ und $\alpha \notin \mathbb{Q}$.
+Sei $\alpha$ algebraisch vom Grad $n > 1$ und $\alpha \notin \mathbb{Q}$.
 
 Dann existiert $c \in \mathbb{R}^{+}$ mit:
 
-$$\vert x - \tfrac{p}{q} \vert > \tfrac{c}{q^k}$$
+$$\vert \alpha - \tfrac{p}{q} \vert > \tfrac{c}{q^n}$$
 
-für alle $k \in \mathbb{N}$ und alle $\tfrac{p}{q} \in \mathbb{Q}$
+für alle $\tfrac{p}{q} \in \mathbb{Q}$
+
+---
+
+## Wiederholung: **Mittelwertsatz**
+
+![bg right:45% fit](./assets/mittelwertsatz.svg)
+
+Seien $a < b$,
+$f: [a, b] \to \mathbb{R}$ stetig,
+$f$ differenzierbar auf $(a, b)$
+
+Dann existiert ein $\xi \in (a, b)$ mit $f'(\xi) = \tfrac{f(b) - f(a)}{b - a}$
+
+---

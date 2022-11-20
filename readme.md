@@ -9,3 +9,7 @@ pnpm install
 pnpm dev   # for browser preview
 pnpm build # for building slides
 ```
+
+## Attribution
+
+- [Visualization of the mean-value theorem](https://commons.wikimedia.org/wiki/File:Mittelwertsatz3.svg) (CC BY 4.0)
