@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @marp-team/marp-cli@latest -s",
-    "build": "npx @marp-team/marp-cli@latest"
+    "dev": "npx @marp-team/marp-cli@2.2.0 -s",
+    "build": "npx @marp-team/marp-cli@2.2.0"
   },
   "marp": {
     "inputDir": "./slides/",
