@@ -13,7 +13,8 @@
     "theme": "./theme/minimal.css",
     "engine": "./engine/engine.js",
     "html": true,
-    "pdf": true
+    "pdf": true,
+    "allowLocalFiles": true
   },
   "keywords": [],
   "author": "",
