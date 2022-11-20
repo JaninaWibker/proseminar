@@ -1,6 +1,6 @@
 ---
-_class: lead invert
-class: invert
+_class: lead
+class:
 paginate: true
 _paginate: false
 ---
