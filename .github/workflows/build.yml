@@ -1,0 +1,48 @@
+name: Build slides and create action artifact
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+          version: ${{ env.PNPM_VERSION }}
+          run_install: false
+
+      - name: Get pnpm cache directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "directory=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.directory }}
+          key: ${{ runner.os }}-pnpm-cache-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-cache-
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build slides
+        run: pnpm build
+
+      - name: Create artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: output/proseminar.pdf
