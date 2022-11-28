@@ -202,3 +202,18 @@ $f$ differenzierbar auf $(a, b)$
 Dann existiert ein $\xi \in (a, b)$ mit $f'(\xi) = \tfrac{f(b) - f(a)}{b - a}$
 
 ---
+
+## **Lemma**
+
+Seien $n \in \mathbb{N}$, $a_i \in \mathbb{Z}$ für $i \in \lbrace 0, \dots, n \rbrace$ und
+
+$$
+\begin{alignedat}{3}
+&f: \mathbb{C} \to \mathbb{C}, \;&f(z) &= \sum_{i=0}^n a_i \cdot z^i \\
+&F: \mathbb{C} \to \mathbb{C}, \;&F(z) &= \sum_{l=0}^n f^{(l)}(z)
+\end{alignedat}
+$$
+
+Dann: $\displaystyle{\vert F(0) \cdot e^z - F(z) \vert \;\le\; e^{\vert z \vert} \cdot \sum_{i=0}^{n} \vert a_i \vert \cdot {\vert z \vert}^i \qquad (\forall z \in \mathbb{C})}$
+
+---
