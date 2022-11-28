@@ -148,6 +148,7 @@ section {
   --color-foreground: black;
   --color-accent: #e0b3f0;
   --color-highlight: #ae3f98;
+  --color-highlight-secondary: #6ad681;
 }
 section::after {
   right: 0;

@@ -293,3 +293,104 @@ $$
   &G_p: \mathbb{C} \to \mathbb{C}, \;&G_p(x) &= F_p(0) \cdot e^x - F_p(x)
 \end{alignedat}
 $$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Sei
+
+$$
+\Sigma_p 
+  := \fcolorbox{transparent}{transparent}{$\displaystyle{\sum_{j=0}^{m} b_j \cdot F_p(j)}$}
+   = \fcolorbox{transparent}{transparent}{$\displaystyle{- \sum_{j=0}^{m} b_j \cdot G_p(j)}$}
+$$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Sei
+
+$$
+\Sigma_p 
+  := \fcolorbox{black}{transparent}{$\displaystyle{\sum_{j=0}^{m} b_j \cdot F_p(j)}$}
+   = \fcolorbox{transparent}{transparent}{$\displaystyle{- \sum_{j=0}^{m} b_j \cdot G_p(j)}$}
+$$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+$$
+\sum_{j=0}^{m} b_j \cdot F_p(j)
+  = \fcolorbox{var(--color-highlight-secondary)}{transparent}{$\displaystyle{  b_0 \cdot \sum_{l=0}^{n_p} f^{(l)}(0)  }$}
+  + \fcolorbox{var(--color-accent)}{transparent}{$\displaystyle{  \sum_{j=1}^{m} b_j \cdot \sum_{l=0}^{n_p} f^{(l)}(j)  }$}
+$$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+$$
+\sum_{j=0}^{m} b_j \cdot F_p(j)
+  = \fcolorbox{var(--color-highlight-secondary)}{transparent}{$\displaystyle{  b_0 \cdot \sum_{l=0}^{n_p} f^{(l)}(0)  }$}
+  + \fcolorbox{var(--color-accent)}{transparent}{$\displaystyle{  \sum_{j=1}^{m} b_j \cdot \sum_{l=0}^{n_p} f^{(l)}(j)  }$}
+$$
+
+$$
+\fcolorbox{var(--color-accent)}{transparent}{$\displaystyle{
+  \sum_{j=1}^{m} b_j \cdot \sum_{l=0}^{n_p} f^{(l)}(j) = 
+  \sum_{j=1}^{m} b_j \cdot \sum_{l=p}^{n_p} a_{p,j,l} \cdot l!
+}$}
+$$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+$$
+\sum_{j=0}^{m} b_j \cdot F_p(j)
+  = \fcolorbox{var(--color-highlight-secondary)}{transparent}{$\displaystyle{  b_0 \cdot \sum_{l=0}^{n_p} f^{(l)}(0)  }$}
+  + \fcolorbox{var(--color-accent)}{transparent}{$\displaystyle{  \sum_{j=1}^{m} b_j \cdot \sum_{l=0}^{n_p} f^{(l)}(j)  }$}
+$$
+
+$$
+\fcolorbox{var(--color-highlight-secondary)}{transparent}{$\displaystyle{
+  b_0 \cdot \sum_{l=0}^{n_p} f^{(l)}(0) =
+  b_0 \cdot \sum_{l=p-1}^{n_p} a_{p,l} \cdot l!
+}$}
+$$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Somit:
+
+$$\Sigma_p = b_0 \cdot (m!)^p \cdot (p-1)! + a_p \cdot p!$$
+
+für ein $a_p \in \mathbb{Z}$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Somit:
+
+$$\Sigma_p \ge (p-1)!$$
+
+für $p \in \mathbb{P} > \text{max}\lbrace m, \vert b_0 \vert \rbrace$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Sei
+
+$$
+\Sigma_p 
+  := \fcolorbox{transparent}{transparent}{$\displaystyle{\sum_{j=0}^{m} b_j \cdot F_p(j)}$}
+   = \fcolorbox{black}{transparent}{$\displaystyle{- \sum_{j=0}^{m} b_j \cdot G_p(j)}$}
+$$
+
