@@ -151,12 +151,6 @@ Falls Minimalpolynom $p \in \mathbb{Z}[X]$ ist, sagt man $\alpha \in \mathbb{C}$
 
 ---
 
-## **Bemerkung**:
-
-Zu jedem $\alpha \in \mathbb{C}$ algebraisch kann man $d \in \mathbb{N}$ finden, sodass $d \cdot \alpha$ ganz-algebraisch.
-
----
-
 ## Konjugierte von algebraischen Zahlen
 
 Falls das MP $p$ für ein $\alpha \in \mathbb{C}$ zerfällt in:
