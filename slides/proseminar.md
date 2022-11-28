@@ -394,3 +394,14 @@ $$
    = \fcolorbox{black}{transparent}{$\displaystyle{- \sum_{j=0}^{m} b_j \cdot G_p(j)}$}
 $$
 
+
+---
+
+<!--
+_class: lead
+_paginate: false
+-->
+
+# **Vielen Dank für die<br /> Aufmerksamkeit!**
+
+## Any questions?
