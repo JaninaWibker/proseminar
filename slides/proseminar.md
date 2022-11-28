@@ -217,3 +217,85 @@ $$
 Dann: $\displaystyle{\vert F(0) \cdot e^z - F(z) \vert \;\le\; e^{\vert z \vert} \cdot \sum_{i=0}^{n} \vert a_i \vert \cdot {\vert z \vert}^i \qquad (\forall z \in \mathbb{C})}$
 
 ---
+
+## **Satz**: $e$ ist transzendent
+
+**Aufbau**:
+- Annahme $e$ hat MP
+- Finde für ein definiertes $\Sigma_p$ zwei Abschätzungen
+- Zeige diese Abschätzungen sind widersprüchlich für groß genug gewähltes $p \in \mathbb{P}$
+- $\implies$ $e$ hat doch kein MP
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Angenommen $e$ hat MP:
+
+$$g: \mathbb{C} \to \mathbb{C}, \quad g(x) = \sum_{j=0}^{m} \tfrac{b_j}{b_m} \cdot x^j$$
+
+Für $b_j \in \mathbb{Z}$ und $b_m \in \mathbb{N}$
+
+Es gilt $g(e) = 0$ und, dass $g$ normiert ist
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Definiere für alle $p \in \mathbb{P}$
+
+$$
+\begin{alignedat}{1}
+&f_p: \mathbb{C} \to \mathbb{C}, \quad f_p(x) = x^{p-1} \cdot \prod_{j=1}^{m} (j-x)^p \qquad \in \mathbb{Z}[X] \\
+&n_p = (m + 1)p - 1 \\
+&a_{p,p-1} = (m!)^p
+\end{alignedat}
+$$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Darstellungen von $f_p(x)$
+
+- $f_p(x) = x^{p-1} \cdot \prod_{j=1}^{m} (j-x)^p$
+  <br />
+- $f_p(x) = a_{p,p-1} \cdot x^{p-1} + a_{p,p} \cdot x^{p} + \dots + a_{p,n_p} \cdot x^{n_p}$
+  für gewisse $a_{p,n} \in \mathbb{Z}$ und $a_{p,p-1} = (m!)^p$
+  ("Ausmultiplizieren")
+
+---
+
+## **Wiederholung**: Taylorentwicklung
+
+$$T_{f(x; a)} = \sum_{n=0}^{\infty} \tfrac{f^{(n)}(a)}{n!} \cdot (x-a)^n = \sum_{n=0}^{\infty} t_n \cdot (x-a)^n$$
+
+ist die Taylorentwicklung von $f$ um $a$ ausgewertet für $x$.
+<br />
+Inbesondere gleicht für Polynome die Taylorentwicklung dem Polynom.
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Darstellungen von $f_p(x)$
+
+- $f_p(x) = x^{p-1} \cdot \prod_{j=1}^{m} (j-x)^p$
+  <br />
+- $f_p(x) = a_{p,p-1} \cdot x^{p-1} + a_{p,p} \cdot x^{p} + \dots + a_{p,n_p} \cdot x^{n_p}$
+  <br />
+- $\displaystyle{f_p(x) = \sum_{n = p}^{n_p} a_{p,j,n} \cdot (x-j)^n}$ für alle $j \in \lbrace 1, \dots, m \rbrace$,
+  gewisse $a_j,n \in \mathbb{Z}$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Definiere
+
+$$
+\begin{alignedat}{2}
+  &F_p: \mathbb{C} \to \mathbb{C}, \;&F_p(x) &= \sum_{l=0}^{n_p} f_p^{(l)}(x) \\
+  &G_p: \mathbb{C} \to \mathbb{C}, \;&G_p(x) &= F_p(0) \cdot e^x - F_p(x)
+\end{alignedat}
+$$
