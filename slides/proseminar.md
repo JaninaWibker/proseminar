@@ -310,7 +310,7 @@ $$
 
 ## **Satz**: $e$ ist transzendent
 
-Sei
+Betrachte
 
 $$
 \Sigma_p 
@@ -386,14 +386,13 @@ für $p \in \mathbb{P} > \text{max}\lbrace m, \vert b_0 \vert \rbrace$
 
 ## **Satz**: $e$ ist transzendent
 
-Sei
+Betrachte
 
 $$
 \Sigma_p 
   := \fcolorbox{transparent}{transparent}{$\displaystyle{\sum_{j=0}^{m} b_j \cdot F_p(j)}$}
    = \fcolorbox{black}{transparent}{$\displaystyle{- \sum_{j=0}^{m} b_j \cdot G_p(j)}$}
 $$
-
 
 ---
 
