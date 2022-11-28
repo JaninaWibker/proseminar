@@ -59,14 +59,14 @@ $(K, +, \cdot)$ ist ein Körper:
 
 ---
 
-## Polynomring
+## Wiederholung: **Polynomring**
 
 Für Ring $R$ ist $R[X]$ der **Polynomring** über $R$:
 alle Polynome die Koeffizienten $a_i$ aus $R$ haben
 
 ---
 
-## Polynomring
+## Wiederholung: **Polynomring**
 
 Für Ring $R$ ist $R[X]$ der **Polynomring** über $R$:
 alle Polynome die Koeffizienten $a_i$ aus $R$ haben
@@ -75,7 +75,7 @@ $$\sum_{i=0}^{n} a_i \cdot X^i\qquad (a_i \in R)$$
 
 ---
 
-## Polynomring
+## Wiederholung: **Polynomring**
 
 Für Ring $R$ ist $R[X]$ der **Polynomring** über $R$:
 alle Polynome die Koeffizienten $a_i$ aus $R$ haben
@@ -266,7 +266,7 @@ Darstellungen von $f_p(x)$
 
 ---
 
-## **Wiederholung**: Taylorentwicklung
+## Wiederholung: **Taylorentwicklung**
 
 $$T_{f(x; a)} = \sum_{n=0}^{\infty} \tfrac{f^{(n)}(a)}{n!} \cdot (x-a)^n = \sum_{n=0}^{\infty} t_n \cdot (x-a)^n$$
 
