@@ -167,12 +167,6 @@ Die Konjugierten von $\alpha$ sind paarweise disjunkt
 
 ---
 
-## **Bemerkung**:
-
-Algebraische Zahlen bilden einen Körper (mit gewöhnlicher Addition und Multiplikation)
-
----
-
 ## Satz von Cantor
 
 Die Menge der algebraischen Zahlen ist abzählbar
