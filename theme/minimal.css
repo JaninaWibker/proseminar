@@ -1,7 +1,7 @@
 /* @theme minimal */
 @charset "UTF-8";
 
-@import 'https://fonts.bunny.net/css?family=merriweather:300,300i,400,400i,500,500i';
+@import 'https://fonts.bunny.net/css?family=rubik:300,300i,400,400i,500,500i';
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0.5em 0 0;
@@ -137,7 +137,7 @@ section {
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-size: 35px;
-  font-family: Merriweather, "Avenir Next", Avenir, "Trebuchet MS", "Segoe UI", sans-serif;
+  font-family: Rubik, "Avenir Next", Avenir, "Trebuchet MS", "Segoe UI", sans-serif;
   height: 720px;
   line-height: 1.5;
   letter-spacing: 1.25px;
