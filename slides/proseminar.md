@@ -10,84 +10,6 @@ Jannik Wibker
 
 ---
 
-## Wiederholung: **Monoid**
-
-$(M, +)$ ist ein Monoid:
-
-- Assoziativ: $a + (b + c) = (a + b) + c$
-- neutrales Element $0$
-
----
-
-## Wiederholung: **Gruppe**
-
-$(G, +)$ ist eine Gruppe:
-
-- Assoziativ: $a + (b + c) = (a + b) + c$
-- neutrales Element $0$
-- Inverses Element $-x$ für jedes $x$
-<br />
-
-**abelsch**, falls kommutativ: $a + b = b + a$
-
----
-
-## Wiederholung: **Ring**
-
-$(R, +, \cdot)$ ist ein Ring:
-
-- $(R, +)$ abelsche Gruppe
-- $(R, \cdot)$ Monoid
-- Distributiv: $a \cdot (b + c) = a \cdot b + a \cdot c$
-<br />
-
-**Nullteilerfrei**, falls $a \cdot b = 0 \implies a = 0 \lor b = 0$
-**Einheiten** $R^{\times}$ sind die invertierbaren Elemente von $R$
-
----
-
-## Wiederholung: **Körper**
-
-$(K, +, \cdot)$ ist ein Körper:
-
-- $(K, +)$ abelsche Gruppe
-- $(K, \cdot)$ abelsche Gruppe
-- Distributiv: $a \cdot (b + c) = a \cdot b + a \cdot c$
-<br />
-
-**Körper** sind **nullteilerfrei** und $K^{\times} = K \setminus \lbrace 0 \rbrace$
-
----
-
-## Wiederholung: **Polynomring**
-
-Für Ring $R$ ist $R[X]$ der **Polynomring** über $R$:
-alle Polynome die Koeffizienten $a_i$ aus $R$ haben
-
----
-
-## Wiederholung: **Polynomring**
-
-Für Ring $R$ ist $R[X]$ der **Polynomring** über $R$:
-alle Polynome die Koeffizienten $a_i$ aus $R$ haben
-
-$$\sum_{i=0}^{n} a_i \cdot X^i\qquad (a_i \in R)$$
-
----
-
-## Wiederholung: **Polynomring**
-
-Für Ring $R$ ist $R[X]$ der **Polynomring** über $R$:
-alle Polynome die Koeffizienten $a_i$ aus $R$ haben
-
-$$\sum_{i=0}^{n} a_i \cdot X^i\qquad (a_i \in R)$$
-<br />
-
-Polynom **normiert**, falls $a_n = 1$
-$R$ nullteilerfrei $\implies$ $R[X]$ nullteilerfrei
-
----
-
 ## Algebraische Zahlen
 
 $\alpha$ ist **algebraisch**, falls es ein Polynom $p \in \mathbb{Q}[X] \setminus \lbrace 0 \rbrace$ gibt, sodass $p(\alpha) = 0$ ist.
@@ -97,15 +19,19 @@ Nicht algebraische Zahlen heißen **transzendente** Zahlen
 
 ---
 
-## **Bemerkung**:
 
-$R$ Körper $\implies$ alle $f \in R[X] \setminus \lbrace 0 \rbrace$ können normiert werden.
-
----
 
 ## **Bemerkung**:
 
 Sei $\alpha \in \mathbb{C}$ algebraisch, dann existiert ein **eindeutiges**, über $\mathbb{Q}$ **irreduzibles** und **normiertes** Polynom $p \in \mathbb{Q}[X] \setminus \lbrace 0 \rbrace$ mit $p(\alpha) = 0$.
+
+---
+
+## **Definition**: Irreduzibilität
+
+Ein Polynom $f$ ist irreduzibel (über einem Körper), falls es nicht als $f = p \cdot q$ geschrieben werden kann, wobei
+
+$$\text{deg}(p), \text{deg}(q) < \text{deg}(f)$$
 
 ---
 
@@ -170,6 +96,14 @@ Die Konjugierten von $\alpha$ sind paarweise disjunkt
 ## Satz von Cantor
 
 Die Menge der algebraischen Zahlen ist abzählbar
+
+---
+
+## Satz von Cantor
+
+Die Menge der algebraischen Zahlen ist abzählbar
+
+$$N(\sum_{i=0}^{n} a_i \cdot x^i) = \vert n \vert + \sum_{i=0}^{n} \vert a_i \vert$$
 
 ---
 
@@ -279,7 +213,7 @@ Darstellungen von $f_p(x)$
 - $f_p(x) = a_{p,p-1} \cdot x^{p-1} + a_{p,p} \cdot x^{p} + \dots + a_{p,n_p} \cdot x^{n_p}$
   <br />
 - $\displaystyle{f_p(x) = \sum_{n = p}^{n_p} a_{p,j,n} \cdot (x-j)^n}$ für alle $j \in \lbrace 1, \dots, m \rbrace$,
-  gewisse $a_j,n \in \mathbb{Z}$
+  gewisse $a_{p,j,n} \in \mathbb{Z}$
 
 ---
 
@@ -378,7 +312,7 @@ für ein $a_p \in \mathbb{Z}$
 
 Somit:
 
-$$\Sigma_p \ge (p-1)!$$
+$$\vert \Sigma_p \vert \ge (p-1)!$$
 
 für $p \in \mathbb{P} > \text{max}\lbrace m, \vert b_0 \vert \rbrace$
 
@@ -393,6 +327,36 @@ $$
   := \fcolorbox{transparent}{transparent}{$\displaystyle{\sum_{j=0}^{m} b_j \cdot F_p(j)}$}
    = \fcolorbox{black}{transparent}{$\displaystyle{- \sum_{j=0}^{m} b_j \cdot G_p(j)}$}
 $$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Wir hatten
+
+$$(p-1)! \quad\le\quad \vert \Sigma_p \vert \quad\le\quad C_g \cdot D_m^p$$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+Wir hatten
+
+$$(p-1)! \quad\le\quad \vert \Sigma_p \vert \quad\le\quad C_g \cdot D_m^p$$
+
+Aber es gibt $N_0 \in \mathbb{N}$, sodass $\forall N \ge N_0$ gilt:
+
+$$(N-1)! \quad\ge\quad {\Big( \dfrac{N}{3}\Big)}^{\frac{N}{2}} \quad>\quad C_g \cdot D_m^N$$
+
+---
+
+## **Satz**: $e$ ist transzendent
+
+**Wiederspruch** ⚡️
+
+$\implies$ $e$ hat doch kein MP
+
+$\implies$ $e$ ist transzendent 🎉
 
 ---
 
