@@ -352,7 +352,7 @@ $$(N-1)! \quad\ge\quad {\Big( \dfrac{N}{3}\Big)}^{\frac{N}{2}} \quad>\quad C_g \
 
 ## **Satz**: $e$ ist transzendent
 
-**Wiederspruch** ⚡️
+**Widerspruch** ⚡️
 
 $\implies$ $e$ hat doch kein MP
 
