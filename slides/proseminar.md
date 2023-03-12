@@ -77,22 +77,6 @@ Falls Minimalpolynom $p \in \mathbb{Z}[X]$ ist, sagt man $\alpha \in \mathbb{C}$
 
 ---
 
-## Konjugierte von algebraischen Zahlen
-
-Falls das MP $p$ für ein $\alpha \in \mathbb{C}$ zerfällt in:
-
-$$p(X) = (X-\alpha_1) \cdot \dots \cdot (X-\alpha_n)$$
-
-für $n = \text{deg}(p), \alpha_i \in \mathbb{C}, \alpha_1 = \alpha$ dann nennt man $\lbrace \alpha_1, \dots, \alpha_n \rbrace$ die **Konjugierten** von $\alpha$.
-
----
-
-## **Bemerkung**:
-
-Die Konjugierten von $\alpha$ sind paarweise disjunkt
-
----
-
 ## Satz von Cantor
 
 Die Menge der algebraischen Zahlen ist abzählbar

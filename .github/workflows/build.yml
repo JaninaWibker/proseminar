@@ -2,6 +2,12 @@ name: Build slides and create action artifact
 
 on: push
 
+permissions:
+  contents: write
+
+env:
+  OUTPUT_FILE_NAME: proseminar.pdf
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -45,4 +51,21 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: output/proseminar.pdf
+          path: "output/${{ env.OUTPUT_FILE_NAME }}"
+
+  release:
+    # only create release if a tag starting with v is pushed
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: PDF
+          path: output
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          draft: false
+          files: "output/${{ env.OUTPUT_FILE_NAME }}"
