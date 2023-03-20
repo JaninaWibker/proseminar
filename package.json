@@ -10,6 +10,7 @@
   "marp": {
     "inputDir": "./slides/",
     "output": "output",
+    "themeSet": "./theme/",
     "theme": "./theme/minimal.css",
     "engine": "./engine/engine.js",
     "html": true,

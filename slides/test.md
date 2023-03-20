@@ -46,6 +46,12 @@ $$\sum^{n}_{i=1} A_i$$
 
 ---
 
+<!--
+header: Some kind of header!
+footer: A foot note!
+_class: invert
+-->
+
 # Heading 1
 
 ## Heading 2
@@ -75,6 +81,10 @@ mark: ==test==
 
 ---
 
+<!--
+_class: invert
+-->
+
 > blockquote
 
 |             |          Grouping           ||
@@ -88,4 +98,30 @@ And more      | With an escaped '\\|'       ||
 
 ---
 
+<!--
+_footer: ''
+_paginate: false
+-->
+
 ![this is a video](https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4)
+
+---
+
+<!--
+_class: invert
+-->
+
+## **Satz**: $e$ ist transzendent
+
+$$
+\sum_{j=0}^{m} b_j \cdot F_p(j)
+  = \fcolorbox{var(--color-highlight-secondary)}{transparent}{$\displaystyle{  b_0 \cdot \sum_{l=0}^{n_p} f^{(l)}(0)  }$}
+  + \fcolorbox{var(--color-accent)}{transparent}{$\displaystyle{  \sum_{j=1}^{m} b_j \cdot \sum_{l=0}^{n_p} f^{(l)}(j)  }$}
+$$
+
+$$
+\fcolorbox{var(--color-accent)}{transparent}{$\displaystyle{
+  \sum_{j=1}^{m} b_j \cdot \sum_{l=0}^{n_p} f^{(l)}(j) = 
+  \sum_{j=1}^{m} b_j \cdot \sum_{l=p}^{n_p} a_{p,j,l} \cdot l!
+}$}
+$$
