@@ -10,8 +10,7 @@ section {
   --color-highlight: #ae3f98;
   --color-highlight-secondary: #6ad681;
 
-  --color-code-background: #f6f8fa;
-  --color-code-border: #d0d7de;
+  --color-neutral-gray: #d0d7de;
 }
 
 section:where(.invert) {
@@ -23,8 +22,7 @@ section:where(.invert) {
   --color-highlight: #e0b3f0;
   --color-highlight-secondary: #3fa659;
 
-  --color-code-background: #161b22;
-  --color-code-border: #30363d;
+  --color-neutral-gray: #30363d;
 }
 
 /* TODO: find better colors 😞 */
