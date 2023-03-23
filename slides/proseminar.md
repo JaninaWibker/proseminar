@@ -6,7 +6,7 @@ _paginate: false
 
 # **algebraische** und <br /> **transzendente** Zahlen
 
-Jannik Wibker
+Janina Wibker
 
 ---
 

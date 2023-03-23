@@ -25,70 +25,42 @@ section:where(.invert) {
   --color-neutral-gray: #30363d;
 }
 
-/* TODO: find better colors 😞 */
 /* code block syntax highlighting */
 section {
-  --color-prettylights-syntax-comment: #6e7781;
-  --color-prettylights-syntax-constant: #0550ae;
-  --color-prettylights-syntax-entity: #8250df;
-  --color-prettylights-syntax-storage-modifier-import: #24292f;
-  --color-prettylights-syntax-entity-tag: #116329;
-  --color-prettylights-syntax-keyword: #cf222e;
-  --color-prettylights-syntax-string: #0a3069;
-  --color-prettylights-syntax-variable: #953800;
-  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
-  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
-  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
-  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
-  --color-prettylights-syntax-carriage-return-bg: #cf222e;
-  --color-prettylights-syntax-string-regexp: #116329;
-  --color-prettylights-syntax-markup-list: #3b2300;
-  --color-prettylights-syntax-markup-heading: #0550ae;
-  --color-prettylights-syntax-markup-italic: #24292f;
-  --color-prettylights-syntax-markup-bold: #24292f;
-  --color-prettylights-syntax-markup-deleted-text: #82071e;
-  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
-  --color-prettylights-syntax-markup-inserted-text: #116329;
-  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
-  --color-prettylights-syntax-markup-changed-text: #953800;
-  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
-  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
-  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
-  --color-prettylights-syntax-meta-diff-range: #8250df;
-  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
-  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
-  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  /* rosé pine dawn theme: https: //rosepinetheme.com/ */
+  --color-rosepine-base: #faf4ed;
+  --color-rosepine-surface: #fffaf3;
+  /* we deviate from rosé pine dawn here with the overlay color, white looks better in this case imo */
+  --color-rosepine-overlay: white; /* #f2e9e1 */
+  --color-rosepine-muted: #9893a5;
+  --color-rosepine-subtle: #797593;
+  --color-rosepine-text: #575279;
+  --color-rosepine-love: #b4637a;
+  --color-rosepine-gold: #ea9d34;
+  --color-rosepine-rose: #d7827e;
+  --color-rosepine-pine: #286983;
+  --color-rosepine-foam: #56949f;
+  --color-rosepine-iris: #907aa9;
+  --color-rosepine-highlight-low: #f4ede8;
+  --color-rosepine-highlight-med: #dfdad9;
+  --color-rosepine-highlight-high: #cecacd;
 }
 
 section:where(.invert) {
-  --color-prettylights-syntax-comment: #8b949e;
-  --color-prettylights-syntax-constant: #79c0ff;
-  --color-prettylights-syntax-entity: #d2a8ff;
-  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
-  --color-prettylights-syntax-entity-tag: #7ee787;
-  --color-prettylights-syntax-keyword: #ff7b72;
-  --color-prettylights-syntax-string: #a5d6ff;
-  --color-prettylights-syntax-variable: #ffa657;
-  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
-  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
-  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
-  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
-  --color-prettylights-syntax-carriage-return-bg: #b62324;
-  --color-prettylights-syntax-string-regexp: #7ee787;
-  --color-prettylights-syntax-markup-list: #f2cc60;
-  --color-prettylights-syntax-markup-heading: #1f6feb;
-  --color-prettylights-syntax-markup-italic: #c9d1d9;
-  --color-prettylights-syntax-markup-bold: #c9d1d9;
-  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
-  --color-prettylights-syntax-markup-deleted-bg: #67060c;
-  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
-  --color-prettylights-syntax-markup-inserted-bg: #033a16;
-  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
-  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
-  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
-  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
-  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
-  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
-  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
-  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  /* rosé pine (base) theme: https: //rosepinetheme.com/ */
+  --color-rosepine-base: #191724;
+  --color-rosepine-surface: #1f1d2e;
+  --color-rosepine-overlay: #26233a;
+  --color-rosepine-muted: #6e6a86;
+  --color-rosepine-subtle: #908caa;
+  --color-rosepine-text: #e0def4;
+  --color-rosepine-love: #eb6f92;
+  --color-rosepine-gold: #f6c177;
+  --color-rosepine-rose: #ebbcba;
+  --color-rosepine-pine: #31748f;
+  --color-rosepine-foam: #9ccfd8;
+  --color-rosepine-iris: #c4a7e7;
+  --color-rosepine-highlight-low: #21202e;
+  --color-rosepine-highlight-med: #403d52;
+  --color-rosepine-highlight-high: #524f67;
 }

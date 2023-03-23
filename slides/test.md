@@ -33,6 +33,10 @@ foobar
 
 ---
 
+<!--
+_class: invert
+-->
+
 $$\sum^{n}_{i=1} A_i$$
 
 - foo
@@ -99,11 +103,51 @@ And more      | With an escaped '\\|'       ||
 ---
 
 <!--
+_class: invert
 _footer: ''
-_paginate: false
 -->
 
-![this is a video](https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4)
+# Dark mode code block
+
+```js
+module.exports = function leftpad(str, len, ch) {
+  str = String(str);
+  var i = -1;
+
+  if (!ch && ch !== 0) ch = ' ';
+
+  len = len - str.length;
+
+  while (i++ < len) {
+    str = ch + str;
+  }
+  return str;
+}
+```
+
+---
+
+<!--
+_footer: ''
+-->
+
+# Dark mode code block
+
+```js
+module.exports = function leftpad(str, len, ch) {
+  str = String(str);
+  var i = -1;
+
+  if (!ch && ch !== 0) ch = ' ';
+
+  len = len - str.length;
+
+  while (i++ < len) {
+    str = ch + str;
+  }
+  return str;
+}
+```
 
 ---
 
@@ -125,3 +169,13 @@ $$
   \sum_{j=1}^{m} b_j \cdot \sum_{l=p}^{n_p} a_{p,j,l} \cdot l!
 }$}
 $$
+
+
+---
+
+<!--
+_footer: ''
+_paginate: false
+-->
+
+![this is a video](https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4)
